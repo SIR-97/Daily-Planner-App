@@ -23,6 +23,26 @@ businessHours.forEach(hour => {
  // Appended the time and description classes to the timeblock
  timeblock.append(time, description);
 
+  // Determine if the timeblock is in the past, present, or future
+  if (hour < moment().hour()) {
+    description.addClass("past");
+  } else if (hour === moment().hour()) {
+    description.addClass("present");
+  } else {
+    description.addClass("future");
+  }
+
+  // Create a save button element
+  const saveBtn = $("<button>")
+    .addClass("col-2 saveBtn fas fa-save")
+    .attr("data-time", hour);
+
+  // Add the save button to the timeblock
+  timeblock.append(saveBtn);
+
+  // Add the timeblock to the container
+  $(".container").append(timeblock);
+
 
 
 })
