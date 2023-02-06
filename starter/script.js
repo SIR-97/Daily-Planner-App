@@ -32,7 +32,7 @@ businessHours.forEach(hour => {
     description.addClass("future");
   }
 
-  // Create a save button element
+  // Create a save button class
   const saveBtn = $("<button>")
     .addClass("col-2 saveBtn fas fa-save")
     .attr("data-time", hour);
@@ -43,6 +43,18 @@ businessHours.forEach(hour => {
   // Add the timeblock to the container
   $(".container").append(timeblock);
 
+});
 
-
-})
+// Save the contents of a timeblock
+$(".saveBtn").on("click", function() {
+    const time = $(this).attr("data-time");
+    const description = $(`textarea[data-time="${time}"]`).val();
+    localStorage.setItem(time, description);
+  });
+  
+  // Load saved timeblock descriptions
+  businessHours.forEach(hour => {
+    const description = localStorage.getItem(hour);
+    $(`textarea[data-time="${hour}"]`).val(description);
+  });
+  
