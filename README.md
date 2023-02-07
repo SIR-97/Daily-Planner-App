@@ -14,7 +14,7 @@ My application meets the the following criterior:
 - Allows the user to enter an event when they click on a timeblock.
 - Saves the event to a local storage when the save button is clicked each respective timeblock.
 
-Link to deployed my application:
+Link to deployed my application: https://sir-97.github.io/Daily-Planner-App/
 
 
 ![sir-97 github io_Daily-Planner-App_](https://user-images.githubusercontent.com/119041506/217238987-1a112b54-d345-425a-b450-fc03b16e3f23.png)
