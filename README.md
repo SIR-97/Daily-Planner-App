@@ -16,8 +16,6 @@ My application meets the the following criterior:
 
 Link to deployed my application:
 
-{note: color codes are not present on this screen-shot due to it being taken outside of the business hours; I can update this is in future}
 
-![_C__Users_Lenovo_bootcamp-challenges_Daily-Planner-App_starter_index html](https://user-images.githubusercontent.com/119041506/217084078-d160c0e4-fa35-488e-a46e-39a67ceb5cd7.png)
-
+![sir-97 github io_Daily-Planner-App_](https://user-images.githubusercontent.com/119041506/217238987-1a112b54-d345-425a-b450-fc03b16e3f23.png)
 
